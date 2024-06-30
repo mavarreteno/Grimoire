@@ -1,0 +1,23 @@
+body {
+  background-image: url(../assets/images/purchase_bg.webp);
+  color: white;
+}
+
+#sophia {
+ width: 100%;
+ height: auto;
+}
+
+div > div {
+  width: 50px;
+}
+
+#hero-banner {
+  width: 110%
+}
+
+#form-container-container {
+  display: flex;
+  justify-content: space-around;
+}
+

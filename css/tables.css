@@ -1,0 +1,40 @@
+body {
+  background-color: hsl(249, 87%, 42%);
+}
+
+
+td, th, tr {
+  border: 1px solid black;
+  /*border-collapse: collapse;
+  *//*border-collapseandborderradiuscannotcoexist*/border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+th, td {
+  padding: 5px
+}
+
+table {
+  border-spacing: 10px;
+}
+
+th {
+  font-size: 1.3em;
+  padding-bottom: 10px
+}
+
+/* hsl colors require the percentage sign for both saturation and lightness even if it shows the preview for the color */
+#zebra tr:nth-child(even) {
+  background-color: hsl(0, 25%, 100%);
+}
+
+#zebra tr:nth-child(odd) {
+  background-color: hsl(0, 0%, 50%);
+}
+
+#hover tr:hover {
+  background-color: blueviolet;
+}

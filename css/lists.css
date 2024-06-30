@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+#horizontal-list ol {
+  margin: 10px;
+  overflow: hidden;
+}
+
+#horizontal-list ol li {
+  float: left;
+  display: block;
+  padding: 10px;
+}
+
+body {
+  background-color: hsl(155, 55%, 50%);
+}
+
+.second,
+.third {
+  float: left;
+  width: 20%;
+  background-color: aqua;
+  border: solid 10px red;
+}
+
+.first {
+  float: left;
+  width: 60%;
+  background-color: aquamarine;
+  border: solid 5px blue;
+  text-align: center;
+}
+
+.first, .third, .second {
+  height: 200px;
+}
+@media (max-width: 576px) {
+  .first, .second, .third {
+    width: 100%;
+  }
+}

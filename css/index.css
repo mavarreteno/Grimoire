@@ -1,0 +1,78 @@
+body {
+  background: linear-gradient(to bottom, #00f, #00f, #ddda14);
+}
+li {
+  list-style: none;
+}
+
+a:link > p,
+a:visited > p,
+li > a:link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: greenyellow;
+  border: 2px solid blue;
+  color: black;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding-bottom: 1px;
+}
+
+a:hover,
+a:active,
+a:hover > p {
+  background-color: red;
+  color: purple;
+}
+
+table,
+td,
+tr,
+th {
+  border: 2px solid black;
+}
+
+th {
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+p.table {
+  color: rgb(255, 255, 255, 1);
+  text-shadow: -0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000,
+    -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;
+}
+
+.top-row {
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 500;
+
+}
+
+.p-div {
+  background: url(../assets/images/icon.png) repeat-y right 500px fixed ;
+  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff,
+    -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+  border: #dbe477 groove;
+}
+
+a:visited {
+  color:pink;
+  background-color:aqua;
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+a:active {
+  color:#ddda14;
+  }
+
+/* display: none; surrounding elements move to fill in the empty space  */
+  /* visibility: hidden; empty space is left void and surrounding elements stay where they were */

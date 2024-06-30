@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/form.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <img id="hero-banner" src="./assets/images/smt5v_banner.png" alt="Shin Megami Tensei V Vengeance">
+  <div id="form-container-container">
+    <div id="form-container">
+      <h1>Sign&nbspIn</h1>
+      <form action="/registration" metdod="POST">
+        <label for="username">Username</label>
+        <input type="text" name='username'>
+        <label for="password">Password</label>
+        <input type="password" name='password'>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <label for="Email">Email</label>
+        <input type="email" name="email">
+      </form>
+    </div>
+    <div id="radio-container">
+      <h1>Game&nbspVersion</h1>
+      <form>
+        <label for="smtV">SMTV</label>
+        <input type="radio" id="smtV" name="game-version" value="smtV">
+        <label for="smtVV">SMTV&nbspVengeance</label>
+        <input type="radio" id="smtVV" name="game-version" value="smtVV">
+      </form>
+    </div>
+    <div>
+      <h1>Owned DLC</h1>
+      <form>
+        <label for="mitama-xp">Mitama&nbspDance&nbspof&nbspExperience</label>
+        <input type="checkbox" name="mitama-xp" value="mitama-xp">
+        <label for="mitama-glory">Mitama&nbspDance&nbspof&nbspGlory</label>
+        <input type="checkbox" name="mitama-glory" value="mitama-glory">
+        <label for="mitama-macca">Mitama&nbspDance&nbspof&nbspMacca</label>
+        <input type="checkbox" name="mitama-macca" value="mitama-macca">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" onclick="alert('Hello')" value="Alert: Hello">
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+      </form>
+    </div>
+  </div>
+  <div style="display: inline;">
+    <img src="./assets/images/shin-megami-tensei-v-sophia-world-of-shadows.avif" id='sophia' alt="Lady Sophia">
+  </div>
+</body>
+
+</html>
