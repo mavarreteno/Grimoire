@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* common fall backs : serif, sans-serif, monospace, cursive, fantasy */
 
 #horizontal-list ol {
   margin: 10px;
@@ -33,11 +36,38 @@ body {
   text-align: center;
 }
 
-.first, .third, .second {
+.first,
+.third,
+.second {
   height: 200px;
 }
 @media (max-width: 576px) {
-  .first, .second, .third {
+  .first,
+  .second,
+  .third {
     width: 100%;
   }
+}
+
+li {
+  /* text-indent: 50px; */
+  /* letter-spacing: 5px; */
+  /* letter-spacing: -2px; */
+  /* line-height: .8; */
+  /* word-spacing: 10px; */
+  /* text-shadow: 1px 1px 5px white; */
+  font-variant: small-caps;
+}
+
+#unordered-list {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+  -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+  -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+  -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-20deg, 0deg);
+  letter-spacing: -2px;
+  font-weight: 500;
+  list-style-type: circle, square, upper-roman, lower-alpha;
 }

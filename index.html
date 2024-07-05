@@ -141,6 +141,38 @@ In, quidem. </pre>
   <div>
     <iframe src="lyrics.html" frameborder="1" height="500px" width="600px"></iframe>
   </div>
+  <div>
+    <h1>draggable items</h1>
+    <div style="border: 1px solid blue; height: 50px;" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+    <img src="./assets/images/icon.png" alt="draggable icon" id="drag1" draggable="true" ondragstart="drag(event)">
+  </div>
+  <pre>
+    // Store local storage
+    localStorage.setItem("lastname", "Smith");
+    
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+    // Store
+    localStorage.lastname = "Smith";
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.lastname;
+
+    localStorage.removeItem("lastname");
+  </pre>
+  <script>
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+    function drag(event) {
+      event.dataTransfer.setData('text', event.target.id);
+    }
+    function drop(event) {
+      event.preventDefault();
+      let data = event.dataTransfer.getData('text');
+      event.target.appendChild(document.getElementById(data))
+    }
+  </script>
 </body>
 
 </html>
