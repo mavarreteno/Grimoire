@@ -8,16 +8,14 @@ li {
 
 #navbar {
   width: 25%;
-  max-width: 250px;
   border: 2px solid black;
   height: 100%;
   position: fixed;
   overflow: auto;
   display: inline-block;
-    background: linear-gradient(to bottom, #ddda14, #00f, #00f);
+  background: linear-gradient(to bottom, #ddda14, #00f, #00f);
+  text-align: center;
 }
-
-
 
 a:link > p,
 a:visited > p,
@@ -95,5 +93,18 @@ main {
   margin-left: 25%;
   padding: 10px;
 }
+
+#navbar > li {
+  margin: 5px;
+  border: 1px solid orchid;
+  width: 80%;
+  text-align: center;
+}
+
+#navbar > li > a {
+  width: 100%;
+  text-align: center;
+}
+
 /* display: none; surrounding elements move to fill in the empty space  */
 /* visibility: hidden; empty space is left void and surrounding elements stay where they were */
