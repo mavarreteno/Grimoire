@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div id="empty"></div>
   <div class="child" id="four">
     <h1>sticky</h1>
     <p>relative until you scroll too much and then becomes fixed</p>
@@ -19,10 +20,11 @@
       <p>Positions element relative to where it would normally appear by default. This div and its header have a
         relative position of 30px from the left</p>
     </div>
-    <div class="child" id="two">
+    <div class="child" id="two" title="tooltip using the title attribute">
       <h1>fixed</h1>
       <p>Fixes the elements position on to the view port. This element is fixed on to the bottom-right of the page(these
         can be useful for nav bars).</p>
+        <pre>tooltip! using the display: none + hover pseudo-class</pre>
     </div>
     <div class="child" id="three">
       <h1>absolute</h1>
@@ -32,26 +34,16 @@
   <div>
     <h1>overflow</h1>
     <h3>overflow property only works for block elements with a specified height</h3>
-    <ul>
+    <ul id="ul">
       <li>visible: default the overflow is not clipped. the content renders outside the element's box</li>
       <li>hidden: the overflow is clipped, and the rest of the content will be invisible</li>
       <li>scroll: the overflow is clipped, and a scrollbar is added to see the rest of the content</li>
       <li>auto: similar to scroll, but it adds scrollbars only when necessary</li>
-      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ducimus magni repudiandae culpa fugiat
-        numquam, error quaerat libero earum voluptas architecto cum praesentium dolor molestias obcaecati ipsam nemo
-        natus unde.</li>
-      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ducimus magni repudiandae culpa fugiat
-        numquam, error quaerat libero earum voluptas architecto cum praesentium dolor molestias obcaecati ipsam nemo
-        natus unde.</li>
-      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ducimus magni repudiandae culpa fugiat
-        numquam, error quaerat libero earum voluptas architecto cum praesentium dolor molestias obcaecati ipsam nemo
-        natus unde.</li>
-      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ducimus magni repudiandae culpa fugiat
-        numquam, error quaerat libero earum voluptas architecto cum praesentium dolor molestias obcaecati ipsam nemo
-        natus unde.</li>
-      <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ducimus magni repudiandae culpa fugiat
-        numquam, error quaerat libero earum voluptas architecto cum praesentium dolor molestias obcaecati ipsam nemo
-        natus unde.</li>
+      <li><strong>pseudo classes</strong></li>
+      <li>a:link = default for an unvisited link</li>
+      <li>a:visited = a link that has already been visited</li>
+      <li>a:hover = when your mouse is over the element but not clicking(can work on other elements besides a)</li>
+      <li>a:active = when you are selecting an element</li>
       <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ducimus magni repudiandae culpa fugiat
         numquam, error quaerat libero earum voluptas architecto cum praesentium dolor molestias obcaecati ipsam nemo
         natus unde.</li>

@@ -1,9 +1,23 @@
 body {
   background: linear-gradient(to bottom, #00f, #00f, #ddda14);
 }
+
 li {
   list-style: none;
 }
+
+#navbar {
+  width: 25%;
+  max-width: 250px;
+  border: 2px solid black;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  display: inline-block;
+    background: linear-gradient(to bottom, #ddda14, #00f, #00f);
+}
+
+
 
 a:link > p,
 a:visited > p,
@@ -49,19 +63,18 @@ p.table {
   color: #ffffff;
   background-color: #000000;
   font-weight: 500;
-
 }
 
 .p-div {
-  background: url(../assets/images/icon.png) repeat-y right 500px fixed ;
-  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff,
-    -0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #fff;
+  background: url(../assets/images/icon.png) repeat-y right 500px fixed;
+  text-shadow: -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff,
+    0.5px 0.5px 0 #fff;
   border: #dbe477 groove;
 }
 
 a:visited {
-  color:pink;
-  background-color:aqua;
+  color: pink;
+  background-color: aqua;
   text-decoration: none;
 }
 
@@ -71,8 +84,16 @@ a:hover {
 }
 
 a:active {
-  color:#ddda14;
-  }
+  color: #ddda14;
+}
 
+li a {
+  display: block;
+}
+
+main {
+  margin-left: 25%;
+  padding: 10px;
+}
 /* display: none; surrounding elements move to fill in the empty space  */
-  /* visibility: hidden; empty space is left void and surrounding elements stay where they were */
+/* visibility: hidden; empty space is left void and surrounding elements stay where they were */
