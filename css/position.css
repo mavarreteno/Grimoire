@@ -27,7 +27,6 @@ h1:hover {
   color: aqua;
 }
 
-
 #two {
   position: fixed;
   bottom: 0;
@@ -81,4 +80,40 @@ li:nth-child(even) {
 }
 #empty {
   height: 500px;
+}
+
+nav.nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 85%);
+}
+
+nav.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* if you hover over and the link is not active */
+nav a:hover:not(.active) {
+  background-color: hsl(0, 0%, 50%);
+}
+
+nav a.active {
+  float: right;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: hsl(0, 0%, 50%);
+}
+
+@media (max-width: 796px)  {
+  nav.nav a.right,
+  nav.nav a {
+    float: none;
+    display: block;
+  }
 }

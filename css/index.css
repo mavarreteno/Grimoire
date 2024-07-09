@@ -95,10 +95,11 @@ main {
 }
 
 #navbar > li {
-  margin: 5px;
+  margin: auto;
   border: 1px solid orchid;
   width: 80%;
   text-align: center;
+  margin-top: 2px;
 }
 
 #navbar > li > a {
