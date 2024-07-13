@@ -164,4 +164,8 @@ nav.nav > .active {
     display:block;
   }
 
+  label[for] {
+    box-shadow: 1px 8px 16px 1px hsl(249, 100%, 10%);
+  }
+
 }

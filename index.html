@@ -19,10 +19,13 @@
         <li><a href="#internal3">listings</a></li>
         <li><a href="#internal4">table top</a></li>
         <br>
-        <li><a href="tables.html">tables</a></li>
-        <li><a href="lists.html">lists</a></li>
-        <li><a href="form.html">form</a></li>
-        <li><a href="position.html">position</a></li>
+        <li><a href="./pages/tables.html">tables</a></li>
+        <li><a href="./pages/lists.html">lists</a></li>
+        <li><a href="./pages/form.html">form</a></li>
+        <li><a href="./pages/position.html">position</a></li>
+        <li><a href="./pages/layout.html">layout</a></li>
+        <li><a href="./pages/flexbox.html">layout</a></li>
+        <li><a href="./pages/broad.html">layout</a></li>
       </ul>
     </nav>
   </header>
@@ -49,14 +52,14 @@ Laudantium mollitia non velit harum illum!
 Eligendi, vitae molestiae quibusdam laboriosam error minus totam 
 ipsam repudiandae natus possimus recusandae excepturi. 
 In, quidem. </pre>
-    <a href="lyrics.html" target="_blank" title="Goes to the lyrics page">
+    <a href="./pages/lyrics.html" target="_blank" title="Goes to the lyrics page">
       <p>Ouroborous</p>
     </a>
-    <a href="form.html">
+    <a href="./pages/form.html">
       <p>form</p>
     </a>
     <a href="https://geniuslyrics.net/shakira/te-aviso-te-anuncio-tango/" target="_top" title="te aviso te anuncio"><img
-        src="assets/images/icon.png" alt="logo"></a>
+        src="../assets/images/icon.png" alt="logo"></a>
     <a href="https://videoele.com/CancionEle/suerte-shakira.html" title="suerte"><img
         src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHJicTB6Y2R0NGtoazhvNTExendtaDZ3YXliNzBrZWt5N29zczV1ayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xTiTngGSQaTuxyngLm/giphy.gif"
         height="50" alt="shakira dancing"></a>
@@ -142,13 +145,13 @@ In, quidem. </pre>
       </table>
     </div>
     <div>
-      <a href="./lyrics.html" title="lyrics page"><button>Click Me!</button></a>
+      <a href="../pages/lyrics.html" title="lyrics page"><button>Click Me!</button></a>
       <a href="mailto:mavarreteno@gmail.com" title="mail-to link">Email me</a>
       <button onclick="document.location='https://www.google.com'"
         style="font-size:25px; background-color: grey; color: blue;">Do Something</button>
     </div>
     <div>
-      <iframe src="lyrics.html" frameborder="1" height="500px" width="600px"></iframe>
+      <iframe src="./pages/lyrics.html" frameborder="1" height="500px" width="600px"></iframe>
     </div>
     <div>
       <h1>draggable items</h1>
@@ -170,20 +173,31 @@ In, quidem. </pre>
 
     localStorage.removeItem("lastname");
   </pre>
-    <script>
-      function allowDrop(event) {
-        event.preventDefault();
-      }
-      function drag(event) {
-        event.dataTransfer.setData('text', event.target.id);
-      }
-      function drop(event) {
-        event.preventDefault();
-        let data = event.dataTransfer.getData('text');
-        event.target.appendChild(document.getElementById(data))
-      }
-    </script>
+  <nav class="footer">
+    <div class="dropdown">
+      <span>mouse over me</span>
+      <div class="dropdown-content">
+        <p>hello world</p>
+      </div>
+    </div>
+  </nav>
+  <div id="border-image">
+    border-image
+  </div>
   </main>
+  <script>
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+    function drag(event) {
+      event.dataTransfer.setData('text', event.target.id);
+    }
+    function drop(event) {
+      event.preventDefault();
+      let data = event.dataTransfer.getData('text');
+      event.target.appendChild(document.getElementById(data))
+    }
+  </script>
 </body>
 
 </html>

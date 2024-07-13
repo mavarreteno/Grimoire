@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.one-flex-container {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.two-flex-container {
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  background-color: red;
+}
+
+.one-flex-child {
+  width: 100px;
+  background-color: aqua;
+}
+
+.two-flex-child {
+  height: 50px;
+  background-color: teal;
+  flex-basis: 100px;
+}
+
+#first-child-two {
+  order: 3;
+}
+
+#second-child-two {
+  order: 1;
+}
+
+#third-child-two {
+  order: 2;
+  flex-grow: 2;
+}
+
+.alert {
+  background: yellow;
+  padding: 5px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color:white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+}
+
+.smallimg {
+  height: 60px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd
+}
+
+@media (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}

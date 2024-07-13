@@ -107,5 +107,28 @@ main {
   text-align: center;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 1);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /* display: none; surrounding elements move to fill in the empty space  */
 /* visibility: hidden; empty space is left void and surrounding elements stay where they were */
+
+div#border-image {
+
+  border: 5px solid transparent;
+  border-image: url(../assets/images/icon.png) 30% round;
+}
