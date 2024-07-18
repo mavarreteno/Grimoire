@@ -1,0 +1,88 @@
+@import "variables";
+@mixin important-text {
+  padding: 20px;
+  margin: 20px;
+  font-size: 25px;
+  background-color: $primary_2;
+  border: 1px solid $primary_1;
+}
+
+
+@mixin variables($primary_2, $none) {
+  background-color: $primary_2;
+  padding: $none;
+  margin: $none;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform:  $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+}
+
+nav {
+  ul {
+    margin: $none;
+    padding: $none;
+    list-style: $no;
+    background-color: $primary_1;
+  }
+  
+  li {
+    display: inline-block;
+    background-color: $primary_2;
+    padding: 5px;
+  }
+  
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: $no;
+    background-color: $primary_3;
+    color: $white;
+    font: {
+      family: Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+  }
+  a:hover {
+    background-color: $primary_1;
+  }
+}
+
+.alert {
+  @include important-text;
+}
+
+.variables {
+  @include variables(blue, 0);
+  @include transform(rotate(-20deg));
+  width: 15%;
+}
+
+.button-basic {
+  border: $no;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button .report {
+  @extend .button-basic;
+  background-color: red;
+}
+
+.button .submit {
+  @extend .button-basic;
+  background-color: green;
+  color: white;
+}
+
+.button {
+  padding: 50px;
+  text-align: center;
+}

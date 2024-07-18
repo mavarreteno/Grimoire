@@ -2,10 +2,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --light-background-color: white;
+  --medium-background-color: #ddd;
+  --primary-color: hsla(240, 81%, 31%, 1);
+  --secondary-color: hsla(26, 100%, 59%, 1);
+  --terciary-color: hsla(350, 76%, 23%, 1);
+  --fourth-color: hsla(20, 100%, 34%, 1);
+  --padding-small: 20px;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: var(--secondary-color);
 }
 
 .flex-container {
@@ -24,18 +34,22 @@ body {
 }
 
 .flex-container {
-  background-color: red;
+  background-color: var(--primary-color);
 }
 
 .one-flex-child {
   width: 100px;
-  background-color: aqua;
+  background-color: var(--terciary-color);
+  color: white;
+  text-shadow: black;
 }
 
 .two-flex-child {
   height: 50px;
-  background-color: teal;
+  background-color: var(--terciary-color);
   flex-basis: 100px;
+  border: 1px solid white;
+  color: white;
 }
 
 #first-child-two {
@@ -61,8 +75,8 @@ body {
 .header {
   padding: 60px;
   text-align: center;
-  background: #1abc9c;
-  color: white;
+  background: var(--primary-color);
+  color: var(--light-background-color);
 }
 
 .navbar {
@@ -71,14 +85,14 @@ body {
 }
 
 .navbar a {
-  color:white;
+  color: var(--light-background-color);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: var(--medium-background-color);
   color: black;
 }
 
@@ -90,19 +104,19 @@ body {
 .side {
   flex: 30%;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: var(--padding-small);
 }
 
 .main {
   flex: 70%;
-  background-color: white;
-  padding: 20px;
+  background-color: var(--light-background-color);
+  padding: var(--padding-small);
 }
 
 .fakeimg {
   background-color: #aaa;
   width: 100%;
-  padding: 20px;
+  padding: var(--padding-small);
   height: 200px;
 }
 
@@ -111,13 +125,47 @@ body {
 }
 
 .footer {
-  padding: 20px;
+  padding: var(--padding-small);
   text-align: center;
-  background: #ddd
+  background: var(--medium-background-color);
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--terciary-color);
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid var(--primary-color);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
 }
 
 @media (max-width: 700px) {
-  .row, .navbar {
+  .row,
+  .navbar {
     flex-direction: column;
   }
 }

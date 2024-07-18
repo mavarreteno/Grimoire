@@ -1,0 +1,59 @@
+.button-basic, .button .report, .button .submit {
+  border: none;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #DAA89B; }
+
+nav li {
+  display: inline-block;
+  background-color: #AE847E;
+  padding: 5px; }
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  background-color: #2C0E37;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold; }
+
+nav a:hover {
+  background-color: #DAA89B; }
+
+.alert {
+  padding: 20px;
+  margin: 20px;
+  font-size: 25px;
+  background-color: #AE847E;
+  border: 1px solid #DAA89B; }
+
+.variables {
+  background-color: blue;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  width: 15%; }
+
+.button .report {
+  background-color: red; }
+
+.button .submit {
+  background-color: green;
+  color: white; }
+
+.button {
+  padding: 50px;
+  text-align: center; }

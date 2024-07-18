@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "node-sass": "^9.0.0",
+    "sass": "^1.77.8",
+    "watch": "^1.0.2"
+  },
+  "name": "grimoire",
+  "description": "Sandbox for experimenting with basic html &amp; css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass css/sass.scss css/sass.css",
+    "sass:watch": "node-sass css/sass.scss css/sass.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
