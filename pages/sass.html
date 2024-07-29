@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/sass.scss">
   <link rel="stylesheet" href="../css/sass.css">
+  <script>
+    function seven_ate_nine() {
+      document.getElementById('nine').innerHTML = '7';
+    }
+  </script>
   <title>Sass</title>
 </head>
 <body>
@@ -17,6 +21,7 @@
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
       <li><a href="#">6</a></li>
+      <li><a href="#" id="nine">9</a></li>
     </ul>
   </nav>
   <div class="alert">
@@ -27,8 +32,8 @@
   </div>
 </div>
 <div class="button">
-  <button class="report">Report</button>
-  <button class="submit">Submit</button>
+  <button class="report"></button>
+  <button type="button" onclick="seven_ate_nine()">789</button>
 </div>
 </body>
 </html>
